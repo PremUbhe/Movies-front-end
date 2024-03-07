@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes rotate {
+    from {
+        transform: rotateY('0deg');
+    }
+
+    to {
+        transform: rotateY('180deg');
+    }
+}
+
+.movie-container {
+    width: 350px;
+    max-height: 515px;
+    animation-name: rotate;
+    animation-duration: 4s;
+}
+
+.movie-container .movie-info {
+    display: none;
+    cursor: pointer;
+}
+
+.movie-container:hover .movie-info {
+    display: block;
+}
+
+.movie-container:hover .movie-img {
+    display: none;
+}
+
+/* shadow */
+
+/* .side_shadow {
+    box-shadow: inset 10px 10px 100px 200px black;
+} */
